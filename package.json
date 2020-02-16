@@ -1,0 +1,23 @@
+{
+  "name": "monolithic-next-monorepo",
+  "version": "0.0.1",
+  "description": "monolithic project use nextjs & lerna",
+  "main": "index.js",
+  "keywords": [
+    "next",
+    "nextjs",
+    "react",
+    "lerna",
+    "monolithic",
+    "monorepo"
+  ],
+  "repository": "https://github.com/trustyoo86/monolithic-next-monorepo.git",
+  "author": "kern.yoo <trustyoo86@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "lerna": "^3.16.4"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
