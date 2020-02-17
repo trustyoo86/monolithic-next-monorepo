@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "jsx": "react",
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "module": "ESNext",
+    "target": "es5",
+    "lib": [
+      "dom", "esnext"
+    ],
+    "allowJs": true,
+    "sourceMap": true,
+    "baseUrl": "./",
+    "rootDir": ".",
+    "outDir": "dist",
+    "allowSyntheticDefaultImports": true
+  },
+  "compileOnSave": true,
+}
