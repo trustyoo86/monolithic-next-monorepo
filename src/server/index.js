@@ -1,6 +1,11 @@
 'use strict';
 
-const app = require('express');
+const main = require('@mnm/main');
+const express = require('express');
+
+const app = express();
+
+main();
 
 app.listen(8080, () => {
   console.log('app listen in 8080');
