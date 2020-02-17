@@ -17,6 +17,10 @@
   "devDependencies": {
     "lerna": "^3.16.4"
   },
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
   "dependencies": {
     "@types/express": "^4.17.2",
     "@typescript-eslint/eslint-plugin": "^2.19.2",
