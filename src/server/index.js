@@ -5,7 +5,7 @@ const express = require('express');
 
 const app = express();
 
-main();
+main(app);
 
 app.listen(8080, () => {
   console.log('app listen in 8080');
