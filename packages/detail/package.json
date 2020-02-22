@@ -1,0 +1,33 @@
+{
+  "name": "@mnm/detail",
+  "version": "0.0.1",
+  "description": "Detail pages component",
+  "keywords": [
+    "react",
+    "lerna",
+    "javascript",
+    "es6",
+    "typescript"
+  ],
+  "author": "kern.yoo <trustyoo86@gmail.com>",
+  "homepage": "https://github.com/trustyoo86/monolithic-next-monorepo#readme",
+  "license": "MIT",
+  "main": "lib/detail.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/trustyoo86/monolithic-next-monorepo.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "bugs": {
+    "url": "https://github.com/trustyoo86/monolithic-next-monorepo/issues"
+  }
+}
