@@ -12,7 +12,7 @@
   "author": "kern.yoo <trustyoo86@gmail.com>",
   "homepage": "https://github.com/trustyoo86/monolithic-next-monorepo#readme",
   "license": "MIT",
-  "main": "lib/detail.js",
+  "main": "src/server/index.js",
   "directories": {
     "lib": "lib",
     "test": "__tests__"
