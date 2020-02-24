@@ -1,5 +1,6 @@
 'use strict';
 
+require('@babel/register');
 const detail = require('@mnm/detail');
 const express = require('express');
 
