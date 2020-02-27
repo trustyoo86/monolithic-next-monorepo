@@ -7,17 +7,20 @@ const src = path.resolve(__dirname, '..', 'src');
 
 module.exports = {
   entry: {
-    'app': path.join(src, 'client', 'App.tsx'),
-    'server': path.join(src, 'server', 'index.ts'),
+    'detail-app': path.join(src, 'client', 'App.tsx'),
+    'detail-server': path.join(src, 'server', 'index.ts'),
   },
   output: {
-    path: path.resolve(__dirname, '..', 'dist'),
+    libraryTarget: 'commonjs',
+  },
+  resolve: {
+    extensions: ['.js', '.ts', '.tsx'],
   },
   module: {
     rules: [
       {
         test: /\.(ts|tsx)$/,
-        loader: 'awesome-typescript-loader',
+        loader: 'ts-loader',
         exclude: /node_modules/,
       },
     ],
