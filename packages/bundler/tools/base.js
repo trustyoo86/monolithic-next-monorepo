@@ -1,15 +1,6 @@
 'use strict';
 
-const webpack = require('webpack');
-const path = require('path');
-
-const src = path.resolve(__dirname, '..', 'src');
-
 module.exports = {
-  entry: {
-    'detail-app': path.join(src, 'client', 'App.tsx'),
-    'detail-server': path.join(src, 'server', 'index.ts'),
-  },
   output: {
     libraryTarget: 'commonjs',
   },

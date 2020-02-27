@@ -1,5 +1,24 @@
 'use strict';
 
-const mode = process.env.NODE_ENV || 'development';
+const bundler = require('@mnm/bundler');
+const path = require('path');
 
-module.exports = require(`./tools/${mode}.js`);
+const clientBundler = bundler({
+  entry: {
+    'detail-app': path.resolve(__dirname, 'src', 'client', 'App.tsx'),
+  },
+  output: {
+    path: path.resolve(__dirname, '..', '..', 'dist'),
+  },
+});
+
+const serverBundler = bundler({
+  entry: {
+    'detail-server': path.resolve(__dirname, 'src', 'server', 'index.ts'),
+  },
+  output: {
+    path: path.resolve(__dirname, 'dist'),
+  },
+});
+
+module.exports = [clientBundler, serverBundler];

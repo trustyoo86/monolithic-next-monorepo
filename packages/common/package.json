@@ -22,5 +22,8 @@
   },
   "bugs": {
     "url": "https://github.com/trustyoo86/monolithic-next-monorepo/issues"
+  },
+  "dependencies": {
+    "@mnm/bundler": "^0.0.1"
   }
 }
