@@ -4,7 +4,7 @@ const axios = require('axios').default;
 const express = require('express');
 
 const server = express();
-const url = 'http://localhost:3000';
+const url = 'http://localhost:4000';
 
 server.get('/detail', (req, res) => {
   axios.post(`${url}/detail`)

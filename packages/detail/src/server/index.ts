@@ -1,8 +1,6 @@
-'use strict';
-
-import App from '../client/App';
 import React from 'react';
 import ReactDOMServer from 'react-dom/server';
+import App from '../client/app';
 
 function detail(server) {
   server.post('/detail', (req, res) => {
@@ -11,4 +9,4 @@ function detail(server) {
   });
 }
 
-module.exports = detail;
+export default detail;
