@@ -6,7 +6,9 @@ const base = require('./tools/base');
 
 function bundler(opts = {}) {
   if (!Object.keys(opts).length) { return false; }
-  return merge(base, Object.assign({}, opts, { mode: env }));
+  const webpackConfig = merge(base, Object.assign({}, opts, { mode: env, watch: env === 'development' }));
+  console.log('webpack config', webpackConfig);
+  return webpackConfig;
 }
 
 module.exports = bundler;

@@ -5,7 +5,9 @@ import App from '../shared/App';
 function detail(server) {
   server.post('/detail', (req, res) => {
     const html = ReactDOMServer.renderToString(React.createElement(App));
-    res.status(200).send(html);
+    res.status(200).render('pages/default', {
+      content: html,
+    });
   });
 }
 

@@ -1,9 +1,6 @@
 'use strict';
 
 module.exports = {
-  output: {
-    libraryTarget: 'commonjs',
-  },
   resolve: {
     extensions: ['.js', '.ts', '.tsx'],
   },

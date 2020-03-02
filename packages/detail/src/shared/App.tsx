@@ -1,8 +1,12 @@
 'use strict';
 
-import React from 'react';
+import React, { useEffect } from 'react';
 
 const App = () => {
+  useEffect(() => {
+    alert('Test!');
+  }, []);
+
   return (
     <div>Hello world!</div>
   );
