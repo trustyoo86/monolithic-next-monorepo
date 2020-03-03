@@ -4,8 +4,10 @@ import App from '../shared/App';
 
 function detail(server) {
   server.post('/detail', (req, res) => {
-    const html = ReactDOMServer.renderToString(React.createElement(App));
-    res.status(200).render('pages/default', {
+    const data = { test: 'Hello' };
+    const html = ReactDOMServer.renderToString(React.createElement(App, data));
+    res.status(200).render('index', {
+      initialData: JSON.stringify(data),
       content: html,
     });
   });

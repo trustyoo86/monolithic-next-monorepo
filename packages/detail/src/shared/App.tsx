@@ -2,13 +2,18 @@
 
 import React, { useEffect } from 'react';
 
-const App = () => {
+interface IProps {
+  test: string;
+}
+
+const App = (props: IProps) => {
+  const { test } = props;
+
   useEffect(() => {
-    alert('Test!');
   }, []);
 
   return (
-    <div>Hello world!</div>
+    <div>{test} world!</div>
   );
 };
 
